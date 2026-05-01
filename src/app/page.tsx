@@ -32,62 +32,27 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleCentered
       navItems={[
-        {
-          name: "Home",
-          id: "hero",
-        },
-        {
-          name: "Questions",
-          id: "products",
-        },
-        {
-          name: "FAQ",
-          id: "faq",
-        },
-        {
-          name: "Contact",
-          id: "contact",
-        },
+        { name: "الرئيسية", id: "hero" },
+        { name: "الأسئلة", id: "products" },
+        { name: "الباقات", id: "pricing" },
+        { name: "الأسئلة الشائعة", id: "faq" },
+        { name: "تواصل معنا", id: "contact" }
       ]}
-      brandName="ExamStore Iraq"
+      brandName="منصة الأسئلة الوزارية"
     />
   </div>
 
   <div id="hero" data-section="hero">
       <HeroBillboardGallery
-      background={{
-        variant: "gradient-bars",
-      }}
-      title="مستقبلك يبدأ من هنا: أسئلة وزارية موثوقة"
-      description="احصل على أفضل الأسئلة الوزارية لجميع المراحل الدراسية في العراق. دقة، سرعة، وضمان للنجاح."
-      tag="منصة الاختبارات الأولى في العراق"
-      buttons={[
-        {
-          text: "تصفح الأسئلة",
-          href: "#products",
-        },
-      ]}
+      background={{ variant: "gradient-bars" }}
+      title="بوابة الطالب العراقي للنجاح الوزاري"
+      description="نقدم أضخم مكتبة للأسئلة الوزارية الموثوقة مع الحلول النموذجية لمختلف المراحل الدراسية."
+      tag="منصة النجاح والتميز"
+      buttons={[{ text: "ابدأ التحميل الآن", href: "#products" }]}
       mediaItems={[
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/elegant-vintage-library-with-wooden-shelves-sophisticated-green-lamps_482257-125675.jpg",
-          imageAlt: "طالب يدرس",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/girl-is-sitting-white-table-office-she-holds-tablet-works-with-financial-diagrams_197531-25030.jpg",
-          imageAlt: "لوحة تحكم ذكية",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/pens-pencils-markers-wooden-desk_23-2147654049.jpg",
-          imageAlt: "ورقة امتحانية",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/group-ethnic-multicultural-students-sitting-table-library_496169-1216.jpg",
-          imageAlt: "طالب يدرس",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/african-american-freelancer-working-from-home-using-financial-graphs_482257-119054.jpg",
-          imageAlt: "لوحة تحكم ذكية",
-        },
+        { imageSrc: "http://img.b2bpic.net/free-photo/elegant-vintage-library-with-wooden-shelves-sophisticated-green-lamps_482257-125675.jpg", imageAlt: "library" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/girl-is-sitting-white-table-office-she-holds-tablet-works-with-financial-diagrams_197531-25030.jpg", imageAlt: "student" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/pens-pencils-markers-wooden-desk_23-2147654049.jpg", imageAlt: "desk" }
       ]}
       mediaAnimation="blur-reveal"
     />
@@ -95,14 +60,8 @@ export default function LandingPage() {
 
   <div id="about" data-section="about">
       <TextAbout
-      useInvertedBackground={false}
-      title="لماذا تختار منصتنا لتحميل الأسئلة؟"
-      buttons={[
-        {
-          text: "تعرف علينا",
-          href: "#",
-        },
-      ]}
+      title="نسعى لدعم الطلبة بأفضل الموارد التعليمية"
+      buttons={[{ text: "اكتشف المزيد", href: "#features" }]}
     />
   </div>
 
@@ -110,28 +69,13 @@ export default function LandingPage() {
       <FeatureCardSix
       textboxLayout="split"
       useInvertedBackground={true}
+      title="لماذا منصتنا هي الخيار الأفضل؟"
+      description="نحن نركز على الدقة والسهولة في الحصول على المراجع الوزارية."
       features={[
-        {
-          title: "أمن المعلومات",
-          description: "ضمان تحميل آمن وسريع لجميع الملفات.",
-          imageSrc: "http://img.b2bpic.net/free-photo/cybersecurity-concept-illustration_23-2151883558.jpg",
-          imageAlt: "digital security shield",
-        },
-        {
-          title: "تحميل فوري",
-          description: "احصل على الأسئلة مباشرة بعد إتمام عملية الشراء.",
-          imageSrc: "http://img.b2bpic.net/free-photo/half-charged-battery-front-side-with-white-background_187299-40052.jpg",
-          imageAlt: "fast download icon",
-        },
-        {
-          title: "دقة عالية",
-          description: "نسخ وزارية أصلية ومطابقة للمناهج الحالية.",
-          imageSrc: "http://img.b2bpic.net/free-photo/stamp-envelope-illustration_187299-47988.jpg",
-          imageAlt: "official document stamp",
-        },
+        { title: "دقة وزارية", description: "جميع الأسئلة مطابقة للنسخ الوزارية الرسمية.", imageSrc: "http://img.b2bpic.net/free-photo/stamp-envelope-illustration_187299-47988.jpg" },
+        { title: "سهولة التصفح", description: "نظام بحث متطور للوصول لمادتك بسرعة.", imageSrc: "http://img.b2bpic.net/free-photo/cybersecurity-concept-illustration_23-2151883558.jpg" },
+        { title: "دعم كامل", description: "مساعدة تقنية فورية في حال حدوث أي مشكلة.", imageSrc: "http://img.b2bpic.net/free-photo/half-charged-battery-front-side-with-white-background_187299-40052.jpg" }
       ]}
-      title="مميزاتنا الأساسية"
-      description="نوفر أدوات متكاملة تساعد الطالب العراقي على التفوق."
     />
   </div>
 
@@ -140,233 +84,70 @@ export default function LandingPage() {
       animationType="slide-up"
       textboxLayout="default"
       gridVariant="three-columns-all-equal-width"
-      useInvertedBackground={false}
+      title="تصفح الأسئلة الوزارية"
+      description="اختر المادة والمرحلة الدراسية وحمل الملفات مباشرة."
       products={[
-        {
-          id: "1",
-          name: "رياضيات - السادس العلمي",
-          price: "5,000 IQD",
-          imageSrc: "http://img.b2bpic.net/free-photo/ball-pen-clipboard-with-papers_23-2147688649.jpg",
-          imageAlt: "math exam cover",
-        },
-        {
-          id: "2",
-          name: "فيزياء - السادس العلمي",
-          price: "4,500 IQD",
-          imageSrc: "http://img.b2bpic.net/free-photo/unrecognizable-boy-reading_23-2147663445.jpg",
-          imageAlt: "science exam cover",
-        },
-        {
-          id: "3",
-          name: "كيمياء - الثالث المتوسط",
-          price: "4,000 IQD",
-          imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-vintage-objects-still-life_23-2150348591.jpg",
-          imageAlt: "history exam cover",
-        },
-        {
-          id: "4",
-          name: "إسلامية - السادس الإعدادي",
-          price: "3,000 IQD",
-          imageSrc: "http://img.b2bpic.net/free-photo/colorful-stack-books-with-we-did-it-message_23-2151966290.jpg",
-          imageAlt: "literature exam cover",
-        },
-        {
-          id: "5",
-          name: "لغة عربية - الثالث المتوسط",
-          price: "3,500 IQD",
-          imageSrc: "http://img.b2bpic.net/free-photo/hand-with-pen-writing-paper_1232-615.jpg",
-          imageAlt: "physics exam booklet",
-        },
-        {
-          id: "6",
-          name: "تاريخ - السادس الأدبي",
-          price: "4,000 IQD",
-          imageSrc: "http://img.b2bpic.net/free-photo/science-elements-lab-with-empty-notepad_23-2148697226.jpg",
-          imageAlt: "chemistry exam cover",
-        },
+        { id: "1", name: "رياضيات السادس العلمي", price: "5,000 IQD", imageSrc: "http://img.b2bpic.net/free-photo/ball-pen-clipboard-with-papers_23-2147688649.jpg" },
+        { id: "2", name: "فيزياء السادس العلمي", price: "4,500 IQD", imageSrc: "http://img.b2bpic.net/free-photo/unrecognizable-boy-reading_23-2147663445.jpg" },
+        { id: "3", name: "كيمياء الثالث المتوسط", price: "4,000 IQD", imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-vintage-objects-still-life_23-2150348591.jpg" }
       ]}
-      title="أحدث الأسئلة الوزارية"
-      description="اختر المادة والمرحلة التي تود الحصول على أسئلتها الوزارية."
     />
   </div>
 
   <div id="pricing" data-section="pricing">
       <PricingCardTwo
       animationType="scale-rotate"
-      textboxLayout="split"
-      useInvertedBackground={true}
+      title="باقات اشتراك تناسب الجميع"
+      description="اختر الباقة المناسبة لمرحلتك الدراسية واحصل على وصول شامل."
       plans={[
-        {
-          id: "basic",
-          badge: "طالب",
-          price: "10,000 IQD",
-          subtitle: "دخول لمدة شهر",
-          buttons: [
-            {
-              text: "اشتراك",
-              href: "#",
-            },
-          ],
-          features: [
-            "تحميل 5 أسئلة",
-            "دعم فني محدود",
-          ],
-        },
-        {
-          id: "pro",
-          badge: "متميز",
-          price: "25,000 IQD",
-          subtitle: "دخول لمدة فصل دراسي",
-          buttons: [
-            {
-              text: "اشتراك",
-              href: "#",
-            },
-          ],
-          features: [
-            "تحميل 20 سؤالاً",
-            "دعم فني 24/7",
-          ],
-        },
-        {
-          id: "gold",
-          badge: "نخبة",
-          price: "45,000 IQD",
-          subtitle: "اشتراك سنوي شامل",
-          buttons: [
-            {
-              text: "اشتراك",
-              href: "#",
-            },
-          ],
-          features: [
-            "تحميل غير محدود",
-            "حلول نموذجية مجانية",
-          ],
-        },
+        { id: "basic", badge: "طالب مبتدئ", price: "10,000 IQD", subtitle: "دخول أساسي", features: ["تحميل 5 ملفات", "دعم أساسي"], buttons: [{ text: "اشترك الآن" }] },
+        { id: "pro", badge: "طالب متميز", price: "25,000 IQD", subtitle: "دخول متقدم", features: ["تحميل غير محدود", "دعم 24/7", "حلول مجانية"], buttons: [{ text: "اشترك الآن" }] }
       ]}
-      title="باقات الاشتراكات"
-      description="احصل على وصول غير محدود للملفات بأفضل الأسعار."
     />
   </div>
 
   <div id="metrics" data-section="metrics">
       <MetricCardTwo
       animationType="depth-3d"
-      textboxLayout="default"
-      gridVariant="uniform-all-items-equal"
-      useInvertedBackground={false}
+      title="أرقامنا"
+      description="نحن نفخر بما قدمناه للطلاب."
       metrics={[
-        {
-          id: "1",
-          value: "15,000+",
-          description: "طالب راضٍ",
-        },
-        {
-          id: "2",
-          value: "500+",
-          description: "أسئلة وزارية",
-        },
-        {
-          id: "3",
-          value: "98%",
-          description: "نسبة نجاح",
-        },
+        { id: "m1", value: "15,000+", description: "طالب مستفيد" },
+        { id: "m2", value: "600+", description: "ملف وزاري جاهز" },
+        { id: "m3", value: "98%", description: "نسبة رضا المستخدمين" }
       ]}
-      title="إنجازاتنا"
-      description="فخورون بمساعدة آلاف الطلبة."
     />
   </div>
 
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardTen
       textboxLayout="split"
-      useInvertedBackground={true}
+      title="ماذا يقول الطلبة؟"
+      description="آراء الطلبة الذين حققوا درجات النجاح معنا."
       testimonials={[
-        {
-          id: "1",
-          title: "مفيد جداً",
-          quote: "بفضل هذه المنصة، حصلت على درجات عالية في الوزاري.",
-          name: "علي محمد",
-          role: "طالب سادس علمي",
-          imageSrc: "http://img.b2bpic.net/free-photo/surprised-woman-graduate-holding-books-head-cap_176420-14259.jpg",
-        },
-        {
-          id: "2",
-          title: "سرعة فائقة",
-          quote: "الأسئلة دقيقة جداً ومطابقة لما جاء في الامتحان الوزاري.",
-          name: "سارة أحمد",
-          role: "طالبة ثالث متوسط",
-          imageSrc: "http://img.b2bpic.net/free-photo/international-day-education-student-attending-school-anime-style_23-2151066347.jpg",
-        },
-        {
-          id: "3",
-          title: "تنظيم رائع",
-          quote: "سهولة الوصول للملفات كانت مفتاح نجاحي.",
-          name: "حسن خليل",
-          role: "طالب سادس أدبي",
-          imageSrc: "http://img.b2bpic.net/free-photo/smiling-girl-with-documents_23-2147657320.jpg",
-        },
-        {
-          id: "4",
-          title: "سعر مناسب",
-          quote: "الأسعار ممتازة مقابل الجودة المقدمة.",
-          name: "مريم جاسم",
-          role: "طالبة إعدادية",
-          imageSrc: "http://img.b2bpic.net/free-photo/notebooks-orange-green-background-school-snack-concept_169016-26381.jpg",
-        },
-        {
-          id: "5",
-          title: "دعم فني متعاون",
-          quote: "ساعدوني كثيراً في اختيار المواد الصحيحة.",
-          name: "ياسر محمود",
-          role: "طالب سادس",
-          imageSrc: "http://img.b2bpic.net/free-photo/female-ceo-boss-discussing-videocall-about-new-project_482257-106452.jpg",
-        },
+        { id: "t1", title: "ممتاز جداً", quote: "الأسئلة وفرت علي الكثير من الجهد والبحث.", name: "علي أحمد", role: "طالب سادس" },
+        { id: "t2", title: "منقذ حقيقي", quote: "التنظيم والسرعة كانا رائعين.", name: "مريم يوسف", role: "طالبة ثالث متوسط" }
       ]}
-      title="آراء الطلبة"
-      description="ماذا يقول الطلبة عن منصتنا."
     />
   </div>
 
   <div id="faq" data-section="faq">
       <FaqDouble
       textboxLayout="split"
-      useInvertedBackground={false}
+      title="الأسئلة الشائعة"
       faqs={[
-        {
-          id: "1",
-          title: "كيف أشتري الأسئلة؟",
-          content: "يمكنك إضافة الأسئلة للسلة والدفع عبر بطاقات الماستر كارد أو زين كاش.",
-        },
-        {
-          id: "2",
-          title: "هل الأسئلة محدثة؟",
-          content: "نعم، نقوم بتحديث الأسئلة فور صدورها من الوزارة.",
-        },
-        {
-          id: "3",
-          title: "هل يمكنني استرجاع أموالي؟",
-          content: "إذا كان الملف معطوباً، سنقوم بإرسال نسخة جديدة أو تعويضك.",
-        },
+        { id: "f1", title: "كيف يتم الدفع؟", content: "يمكنكم الدفع عبر زين كاش أو بطاقات الماستر كارد." },
+        { id: "f2", title: "هل يمكن تحميل الملفات على الهاتف؟", content: "نعم، المنصة تدعم جميع الأجهزة." }
       ]}
-      title="أسئلة شائعة"
-      description="كل ما تحتاج معرفته عن المنصة."
       faqsAnimation="blur-reveal"
     />
   </div>
 
   <div id="contact" data-section="contact">
       <ContactSplit
-      useInvertedBackground={true}
-      background={{
-        variant: "plain",
-      }}
       tag="تواصل معنا"
-      title="هل تحتاج إلى مساعدة؟"
-      description="فريق الدعم الفني جاهز للإجابة على جميع استفساراتك."
-      imageSrc="http://img.b2bpic.net/free-photo/front-view-student-holding-books-library_23-2148727868.jpg"
-      mediaAnimation="blur-reveal"
+      title="هل لديك استفسار؟"
+      description="فريق الدعم متاح للإجابة عن أسئلتك في أي وقت."
     />
   </div>
 
@@ -374,34 +155,9 @@ export default function LandingPage() {
       <FooterBaseReveal
       logoText="ExamStore Iraq"
       columns={[
-        {
-          title: "الشركة",
-          items: [
-            {
-              label: "من نحن",
-              href: "#",
-            },
-            {
-              label: "الأسئلة",
-              href: "#products",
-            },
-          ],
-        },
-        {
-          title: "الدعم",
-          items: [
-            {
-              label: "اتصل بنا",
-              href: "#contact",
-            },
-            {
-              label: "الخصوصية",
-              href: "#",
-            },
-          ],
-        },
+        { title: "المنصة", items: [{ label: "الأسئلة", href: "#products" }, { label: "من نحن", href: "#about" }] },
+        { title: "الدعم", items: [{ label: "اتصل بنا", href: "#contact" }] }
       ]}
-      copyrightText="© 2024 ExamStore Iraq. جميع الحقوق محفوظة."
     />
   </div>
       </ReactLenis>
