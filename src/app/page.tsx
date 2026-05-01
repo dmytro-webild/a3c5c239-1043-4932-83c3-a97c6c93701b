@@ -62,6 +62,7 @@ export default function LandingPage() {
       <TextAbout
       title="نسعى لدعم الطلبة بأفضل الموارد التعليمية"
       buttons={[{ text: "اكتشف المزيد", href: "#features" }]}
+      useInvertedBackground={false}
     />
   </div>
 
@@ -74,8 +75,9 @@ export default function LandingPage() {
       features={[
         { title: "دقة وزارية", description: "جميع الأسئلة مطابقة للنسخ الوزارية الرسمية.", imageSrc: "http://img.b2bpic.net/free-photo/stamp-envelope-illustration_187299-47988.jpg" },
         { title: "سهولة التصفح", description: "نظام بحث متطور للوصول لمادتك بسرعة.", imageSrc: "http://img.b2bpic.net/free-photo/cybersecurity-concept-illustration_23-2151883558.jpg" },
-        { title: "دعم كامل", description: "مساعدة تقنية فورية في حال حدوث أي مشكلة.", imageSrc: "http://img.b2bpic.net/free-photo/half-charged-battery-front-side-with-white-background_187299-40052.jpg" }
+        { title: "دعم كامل", description: "مساعدة تقنية فورية في حال حدوث أي مشكلة.", imageSrc: "http://img.b2bpic.net/half-charged-battery-front-side-with-white-background_187299-40052.jpg" }
       ]}
+      animationType="slide-up"
     />
   </div>
 
@@ -84,6 +86,7 @@ export default function LandingPage() {
       animationType="slide-up"
       textboxLayout="default"
       gridVariant="three-columns-all-equal-width"
+      useInvertedBackground={false}
       title="تصفح الأسئلة الوزارية"
       description="اختر المادة والمرحلة الدراسية وحمل الملفات مباشرة."
       products={[
@@ -97,6 +100,8 @@ export default function LandingPage() {
   <div id="pricing" data-section="pricing">
       <PricingCardTwo
       animationType="scale-rotate"
+      textboxLayout="default"
+      useInvertedBackground={false}
       title="باقات اشتراك تناسب الجميع"
       description="اختر الباقة المناسبة لمرحلتك الدراسية واحصل على وصول شامل."
       plans={[
@@ -109,6 +114,9 @@ export default function LandingPage() {
   <div id="metrics" data-section="metrics">
       <MetricCardTwo
       animationType="depth-3d"
+      gridVariant="bento-grid"
+      textboxLayout="default"
+      useInvertedBackground={false}
       title="أرقامنا"
       description="نحن نفخر بما قدمناه للطلاب."
       metrics={[
@@ -122,6 +130,7 @@ export default function LandingPage() {
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardTen
       textboxLayout="split"
+      useInvertedBackground={false}
       title="ماذا يقول الطلبة؟"
       description="آراء الطلبة الذين حققوا درجات النجاح معنا."
       testimonials={[
@@ -134,7 +143,9 @@ export default function LandingPage() {
   <div id="faq" data-section="faq">
       <FaqDouble
       textboxLayout="split"
+      useInvertedBackground={false}
       title="الأسئلة الشائعة"
+      description="إجابات على أهم تساؤلاتكم."
       faqs={[
         { id: "f1", title: "كيف يتم الدفع؟", content: "يمكنكم الدفع عبر زين كاش أو بطاقات الماستر كارد." },
         { id: "f2", title: "هل يمكن تحميل الملفات على الهاتف؟", content: "نعم، المنصة تدعم جميع الأجهزة." }
@@ -148,6 +159,8 @@ export default function LandingPage() {
       tag="تواصل معنا"
       title="هل لديك استفسار؟"
       description="فريق الدعم متاح للإجابة عن أسئلتك في أي وقت."
+      background={{ variant: "gradient-bars" }}
+      useInvertedBackground={false}
     />
   </div>
 
