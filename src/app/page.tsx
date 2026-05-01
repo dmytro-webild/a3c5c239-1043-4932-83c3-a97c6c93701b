@@ -77,7 +77,6 @@ export default function LandingPage() {
         { title: "سهولة التصفح", description: "نظام بحث متطور للوصول لمادتك بسرعة.", imageSrc: "http://img.b2bpic.net/free-photo/cybersecurity-concept-illustration_23-2151883558.jpg" },
         { title: "دعم كامل", description: "مساعدة تقنية فورية في حال حدوث أي مشكلة.", imageSrc: "http://img.b2bpic.net/half-charged-battery-front-side-with-white-background_187299-40052.jpg" }
       ]}
-      animationType="slide-up"
     />
   </div>
 
@@ -92,7 +91,7 @@ export default function LandingPage() {
       products={[
         { id: "1", name: "رياضيات السادس العلمي", price: "5,000 IQD", imageSrc: "http://img.b2bpic.net/free-photo/ball-pen-clipboard-with-papers_23-2147688649.jpg" },
         { id: "2", name: "فيزياء السادس العلمي", price: "4,500 IQD", imageSrc: "http://img.b2bpic.net/free-photo/unrecognizable-boy-reading_23-2147663445.jpg" },
-        { id: "3", name: "كيمياء الثالث المتوسط", price: "4,000 IQD", imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-vintage-objects-still-life_23-2150348591.jpg" }
+        { id: "3", name: "كيمياء الثالث المتوسط", price: "4,000 IQD", imageSrc: "http://img.b2bpic.net/flat-lay-vintage-objects-still-life_23-2150348591.jpg" }
       ]}
     />
   </div>
